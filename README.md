@@ -33,9 +33,12 @@ After some research on the nRF24L01, I followed this project: https://create.ard
 
 ![Arduino Uno pinout diagram](/media/arduino-uno-pinout-diagram.png)
 [Pinout of ARDUINO Board and ATMega328PU](https://commons.wikimedia.org/wiki/File:Pinout_of_ARDUINO_Board_and_ATMega328PU.svg) by pighixxx is licensed under [Creative Commons Attribution-Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+
 I used the standard SPI pins 10,11,12,13 (SS, MOSI, MISO, SCK) + CE on 9
 The LED is connected on pin 3.
 The button is connected on pin 2.
+
+![Project diagram](/media/ArduinoRF24ButtonLED.png)
 
 
 
