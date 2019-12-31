@@ -44,7 +44,7 @@ The button is connected on pin 2.
 
 I used the Arduino IDE and added the RF24 library to the project.
 
-![Arduino library manager: RF24 library](/media/ArduinoRF24ButtonLED Arduino IDE 1.8.10 RF24 library.png)
+![Arduino library manager: RF24 library]("/media/ArduinoRF24ButtonLED-ArduinoIDE-RF24library.png")
 
 
 
