@@ -32,3 +32,19 @@ I used the Arduino IDE and added the RF24 library to the project.
 
 ![Arduino library manager: RF24 library](/media/ArduinoRF24ButtonLED-ArduinoIDE-RF24library.png)
 
+## What I learned
+* [nRF24L01](https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/)
+* Serial Peripheral Interfaces ([SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)).
+* Patience from connecting the nRF24L01 to the arduino (not breadboard friendly, diagrams from top and pins from bottom)
+* "printf.h" that redirects stdout to Serial, and how to make it work with non arduino boards ([See here](/printf2serial.md))
+* [Fritzing](https://fritzing.org/download/) for wiring diagrams. I gave my 8 €, it's worth it.
+
+## What must be improved
+* It emits continuously. It should sleep, wake up when button pressed and only transmit changes.
+* There is no proper variable structure containing the type of device and its status or action.
+* The addressing is built-in which prevents configuration on installation.
+* It is mainly point-to-point. It should send the message centrally, and we need a gateway and an automation controller.
+* It has a limited range (about 15m) and may need repeaters or a mesh protocol (or an antenna mod).
+* It is not secure (any value emitted for the target address will do).
+* There is no dedicated power supply (two computers with USB ports)
+* It lacks a proper enclosure (but it's just a test)
